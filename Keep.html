@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="./keepStyle.css" />
+    
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
+    
+    <title>Keep</title>
+  </head>
+  <body>
+    <div class="user">
+      <div class="user_text"><span class="text2">登 录 开 始 使 用</span>
+        <image class="img imgH" src="./keepImage/提交.png">
+        </image></div>     
+      <form class="user_input">
+        <label>用户名</label>
+          <input class="userLogin_input user_input--type" placeholder=" 用户"/>
+          <label>密码</label>
+          <input class="userMima_input user_input--type" placeholder=" 密码"/>
+          <button class="user_button"></button>
+        </form>   
+    </div>
+    <div class="nav">
+      <div class="left">
+        <div class="div1"><image src="./keepImage/K_square_字母k.png"></image> Keep</div>
+        <ul class="workouts">          
+          <form class="form hidden">
+            
+            <div class="form_row">
+              <label class="form_label">类型</label>
+              <select class="form_input form_input--type" style="width: 68px;">
+                <option value="跑步">跑步</option>
+                <option value="骑行">骑行</option>
+              </select>
+            </div>
+            <div class="form_row">
+              <label class="form_label">距离</label>
+              <input  class="form_input form_input--distance" placeholder="km" />
+            </div>
+            <div class="form_row">
+              <label class="form_label">时间</label>
+              <input class="form_input form_input--duration" placeholder="min" />
+            </div>
+            <div class="form_row">
+              <label class="form_label">步频</label>
+              <input class="form_input form_input--cadence" placeholder="step/min" />
+            </div>
+            <div class="form_row form_row--hidden">
+              <label class="form_label">海拔</label>
+              <input class="form_input form_input--elevation" placeholder="meters" />
+            </div>         
+            <input type=submit style="display: none"/>          
+          </form>  
+        </ul>
+      </div>
+      <div id="map"></div>
+    </div>
+    
+  </body>
+  <script src="./keepApp.js"></script>
+</html>

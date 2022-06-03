@@ -1,0 +1,226 @@
+#map {
+ width: 100%;
+ border-radius: 10px;
+}
+
+.user{
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  margin-top: 5px;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: rgb(58, 56, 56);
+  border-radius: 10px;
+}
+.user .user_text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin-left: 7%;
+  font-size: large;
+  color: aliceblue;
+}
+.user .user_text .img{
+  height: 35px;
+  width: 35px;
+  margin-left: 10%;
+}
+.user .user_text .imgH{
+  display: none;
+}
+.user .user_input{
+  display: flex;
+  align-items: center;
+  margin-right: 80px;
+}
+.user .user_input label{
+  color: aliceblue;
+  font-size: 14px;
+  margin-right: 9px;
+}
+.user .user_input .userLogin_input{
+  width: 120px;
+  height: 24px;
+  margin-right: 30px;
+  border-radius: 10px;
+  border: 1px solid rgb(230, 208, 208);
+  box-shadow: 2px 2px 3px 1px rgb(71, 70, 70,20);
+}
+.user .user_input .userMima_input{
+  width: 120px;
+  height: 24px;
+  border-radius: 10px;
+  border: 1px solid rgb(230, 208, 208);
+  box-shadow: 2px 2px 3px 1px rgb(71, 70, 70,20);
+}
+.user .user_input .user_button{
+  margin-left: 20px;
+  margin-right: -20px;
+  width: 20px;
+  height: 20px;
+  border: 0;
+  background: url(./keepImage/线性-提交.png);
+  background-size: 100%;
+}
+/************************************************/
+
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-top: 2px;
+  margin-right: 20px;
+  margin-left: 20px;
+  height: 1300px;
+}
+.nav .left {
+  background-color: rgb(58, 56, 56);
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+.nav .left .div1 {
+  padding-top: 30px;
+  font-size: 30px;
+  text-align: center;
+  width: 150px;
+  height: 60px;
+  color: aliceblue;
+}
+.nav .left img {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-bottom: 5px;
+}
+
+.leaflet-popup .leaflet-popup-content-wrapper {
+  border-radius: 5px;
+  background-color: rgb(7, 15, 7);
+  color: rgb(230, 208, 208);
+  padding-right: 0.6rem;
+  line-height: 12px;
+}
+.leaflet-popup .leaflet-popup-content {
+  font-size: 13px;
+}
+.leaflet-popup .leaflet-popup-tip {
+  background-color: rgb(7, 15, 7);
+}
+
+.runner-popup .leaflet-popup-content-wrapper {
+  border-left: 5px solid rgb(31, 211, 70);
+}
+.cycling-popup .leaflet-popup-content-wrapper {
+  border-left: 5px solid rgb(158, 105, 5);
+}
+
+.form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  width: 380px;
+  font-size: 11px;
+  background-color: rgb(95, 91, 91);
+  border-radius: 10px;
+  justify-content: middle;
+  margin-left: -39px;
+  transform: all 0.5s,transform 1ms;
+}
+ 
+.hidden{
+  display: none;
+}
+.form_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  height: 50px;
+  width: 110px;
+  margin-right: 15px;
+  margin-left: 15px;
+  color: rgb(230, 208, 208);
+}
+.form_row.hidden{
+  transform: translateY(-30rem);
+}
+.form_row .form_label {
+  font-size: 14px;
+  
+}
+.form_row .form_input {
+  width: 60px;
+  border-radius: 4px;
+  border: 1px solid rgb(230, 208, 208);
+  box-shadow: 2px 2px 3px 1px rgb(71, 70, 70,50);
+}
+
+.form_row--hidden{
+  display: none;
+}
+
+.workout{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 373px;
+  height: 100px;
+  margin-left: -38px;
+  margin-top: 10px;
+  background-color: rgb(95, 91, 91);
+  border-radius: 10px;
+  border-left: 7px solid rgb(66, 238, 89);
+  color: rgb(230, 208, 208);
+}
+h2{
+  font-size: 18px;
+}
+.workout_title{
+  padding-left: 20px;
+}
+.w-box{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  height: 50px;
+  box-sizing: border-box;
+  
+}
+.workout_details{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 8px;
+}
+.w-box .workout_details .workout_icon{
+  height: 20px;
+  width: 20px;
+  margin-right: 2px;
+}
+.w-box .workout_details .workout_value{
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.w-box .workout_details .workout_unit{
+  display: inline-block;
+  font-size: 7px;
+  position: relative;
+  top: 3px;
+}
+.workout--cycling{
+  border-left: 7px solid rgb(158, 105, 5);
+}
